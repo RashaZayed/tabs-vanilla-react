@@ -1,0 +1,30 @@
+.title {
+    display: inline-block;
+    border: solid  4px grey;
+    width: 200px;
+    height:70px;
+    margin: 10px;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.content {
+    width: 640px;
+    height: 500px;
+    font-size: 15px;
+    border: solid 4px gray;
+    margin: 10px;
+    margin-left: 345px;
+    text-align: left;
+    padding: 10px;
+}
+.clicked {
+    display: inline-block;
+    border: solid  4px grey;
+    width: 200px;
+    height:70px;
+    margin: 10px;
+    font-size: 25px;
+    padding-top: 15px;
+    background-color: red;
+
+}

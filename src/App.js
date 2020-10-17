@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./App.css";
+import Title from "./components/Title";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [input, setInput] = useState([
+    {
+      name: "Name",
+      content: "Rasha Zayed",
+      index: 0,
+      clicked: false
+    },
+    {
+      name: "Nationalinty",
+      content: "Egyptian",
+      index: 1,
+      clicked: false
+    },
+    {
+      name: "Hobbies",
+      content: "Travel , Photography , Baking",
+      index: 2,
+      clicked: false
+    },
+  ]);
+  return <div className="App">
+    <Title  input={input}  setInput={setInput}/>
+
+
+
+  </div>;
 }
 
 export default App;
